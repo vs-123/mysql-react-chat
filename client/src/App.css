@@ -1,0 +1,65 @@
+html, body, .App { 
+  height: 100%;
+  width: 100%; 
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.messageBody {
+  position: sticky;
+  /* border: 1px solid black; */
+  height: 90vh;
+  width: 100vw;
+  background-color: #f3f1ef;
+  overflow: auto;
+}
+
+#messagesList {
+  margin: 0;
+  padding: 0;
+}
+
+.messages {
+  list-style-type: none;
+  border-bottom: 1px solid #0a0a0a;
+  padding: 10px 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.messages:nth-child(even) {
+  background-color: #e8ecf1;
+}
+
+.messages:nth-child(even):hover {
+  background-color: #d2d5d9;
+}
+
+.messages:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+.messages:nth-child(odd):hover {
+  background-color: #d4d4d4;
+}
+
+#messageBoxContainer {
+  width: 100vw;
+}
+
+#messageBox {
+  outline: 0;
+  position: sticky;
+  bottom: 0;
+  height: 10vh;
+  width: 98%;
+  background-color: #f3f1ef;
+  font-size: 1.5em;
+  padding: 0 15px;
+  text-overflow: ellipsis;
+  border: none;
+  border-top: 2px solid black;
+}
